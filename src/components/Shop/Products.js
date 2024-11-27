@@ -5,15 +5,14 @@ const DUMMY_PRODUCTS = [
   {
     id: "p1",
     price: 6,
-    title: "my first book",
-    description: "the first book i ever wrote",
+    title: "My First Book",
+    description: "The first book I ever wrote",
   },
-
   {
     id: "p2",
-    price: 8,
-    title: "my second book",
-    description: "the second book i ever wrote",
+    price: 5,
+    title: "My Second Book",
+    description: "The second book I ever wrote",
   },
 ];
 
@@ -26,9 +25,9 @@ const Products = (props) => {
           <ProductItem
             key={product.id}
             id={product.id}
-            title="Test"
-            price={6}
-            description="This is a first product - amazing!"
+            title={product.title}
+            price={product.price}
+            description={product.description}
           />
         ))}
       </ul>
